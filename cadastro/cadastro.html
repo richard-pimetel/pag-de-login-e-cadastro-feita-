@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="script-cadastro.js" defer></script>
+    <title>Cadastro - EsporteON</title>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-card">
+            <div class="logo-container">
+                <h1 class="logo">Esporte<span>ON</span></h1>
+                <p>Cadastre-se para acessar o melhor do esporte</p>
+            </div>
+
+            <form id="registerForm" class="register-form">
+                <div class="form-group">
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="nome">Nome Completo</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required>
+                    <label for="email">E-mail</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="senha" name="senha" required>
+                    <label for="senha">Senha</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="confirmarSenha" required>
+                    <label for="confirmarSenha">Confirmar Senha</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="senhaRecuperacao" name="senhaRecuperacao" required>
+                    <label for="senhaRecuperacao">Palavra de Recuperação</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="btnCadastrar">
+                    <span class="btn-text">Cadastrar</span>
+                    <div class="spinner hidden" id="spinner"></div>
+                </button>
+
+                <div class="login-link">
+                    Já tem uma conta? <a href="../login/index.html">Faça login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

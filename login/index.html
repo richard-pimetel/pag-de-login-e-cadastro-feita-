@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <script src="script.js" defer></script>
+    <title>Login - EsporteON</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo-container">
+                <h1 class="logo">Esporte<span>ON</span></h1>
+                <p>Faça login para acessar o melhor do esporte</p>
+            </div>
+
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email">E-mail</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="password" id="senha" name="senha" required placeholder=" ">
+                    <label for="senha">Senha</label>
+                    <div class="underline"></div>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="btnEntrar">
+                    <span class="btn-text">Entrar</span>
+                    <div class="spinner hidden" id="spinner"></div>
+                </button>
+
+                <div class="links-container">
+                    <a href="../cadastro/cadastro.html" class="link">Criar uma conta</a>
+                    <a href="esqueceu-senha.html" class="link">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
